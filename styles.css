@@ -1,5 +1,6 @@
 .conent {
     margin-left: 92px;
+	margin-right: 92px;
 }
 
 .header-link {
@@ -7,12 +8,14 @@
 }
 
 .column-logo img {
-    width: 26%;
+    width: 12%;
     margin-left: 92px;
 }
 .column1 {
-    float: left;
-    width: 15%;
+	position: absolute;
+    left: 226px;
+    /* float: left;
+    width: 15%; */
    /* padding: 10px;*/
    /*padding-left: 93px;*/
 }
@@ -37,7 +40,7 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 118px;
+    top: 137px;
     left: 441px;
 }
 .uparrow {
@@ -46,7 +49,7 @@
 }
 .header-line2 img {
     position: absolute;
-    top: 270px;
+    top: 289px;
     left: 425px; 
     width: 40px;
     height: 40px;
@@ -56,7 +59,7 @@
 } */
 .header-line3 img {
     position: absolute;
-    top: 405px;
+    top: 424px;
     left: 429px; 
     width: 40px;
     height: 40px;
@@ -151,4 +154,72 @@ width:110px;
     display: inline-block;
     vertical-align: text-bottom;
     padding-bottom: 15px;
+}
+
+/* expand collapse */
+
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+	background-color: #555;
+  }
+  
+  .collapsible:after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\2212";
+  }
+  
+  .content-line8 {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+  }
+
+  /* @media screen and (min-width: 400px) {
+	.header-line1 img {
+		top: 127px;
+		left: 598px;
+	}
+  } */
+
+  @media (min-width:320px) {
+	.header-line1 img {
+		display: none !important;
+	}
+	.header-line2 img {
+		display: none !important;
+	}
+	.header-line3 img {
+		display: none !important;
+	}
+}
+@media (min-width:1250px) {
+	.header-line1 img {
+		display: block !important;
+	}
+	.header-line2 img {
+		display: block !important;
+	}
+	.header-line3 img {
+		display: block !important;
+	}
 }
